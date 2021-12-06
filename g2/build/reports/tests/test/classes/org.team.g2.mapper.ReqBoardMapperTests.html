@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ReqBoardMapperTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ReqBoardMapperTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.team.g2.mapper.html">org.team.g2.mapper</a> &gt; ReqBoardMapperTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.426s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testList()</td>
+<td class="success">0.426s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2021-09-19 04:07:13,539 Test worker DEBUG Apache Log4j Core 2.14.0 initializing configuration XmlConfiguration[location=C:\Users\82102\IdeaProjects\g2\build\resources\main\log4j2.xml]
+2021-09-19 04:07:13,550 Test worker DEBUG Installed 2 script engines
+2021-09-19 04:07:14,016 Test worker DEBUG Graal.js version: 21.1.0, language: ECMAScript, threading: Not Thread Safe, compile: true, names: [js, JS, JavaScript, javascript, ECMAScript, ecmascript, Graal.js, graal.js, Graal-js, graal-js, Graal.JS, Graal-JS, GraalJS, GraalJSPolyglot], factory class: com.oracle.truffle.js.scriptengine.GraalJSEngineFactory
+2021-09-19 04:07:14,327 Test worker DEBUG Oracle Nashorn version: 11.0.11, language: ECMAScript, threading: Not Thread Safe, compile: true, names: [nashorn, Nashorn, js, JS, JavaScript, javascript, ECMAScript, ecmascript], factory class: jdk.nashorn.api.scripting.NashornScriptEngineFactory
+2021-09-19 04:07:14,328 Test worker DEBUG PluginManager 'Core' found 122 plugins
+2021-09-19 04:07:14,329 Test worker DEBUG PluginManager 'Level' found 0 plugins
+2021-09-19 04:07:14,336 Test worker DEBUG PluginManager 'Lookup' found 16 plugins
+2021-09-19 04:07:14,338 Test worker DEBUG Building Plugin[name=layout, class=org.apache.logging.log4j.core.layout.PatternLayout].
+2021-09-19 04:07:14,347 Test worker DEBUG PluginManager 'TypeConverter' found 26 plugins
+2021-09-19 04:07:14,358 Test worker DEBUG PatternLayout$Builder(pattern=&quot;%d{yyyy-MM-dd hh:mm:ss} %5p [%c] %m%n&quot;, PatternSelector=null, Configuration(C:\Users\82102\IdeaProjects\g2\build\resources\main\log4j2.xml), Replace=null, charset=&quot;UTF-8&quot;, alwaysWriteExceptions=&quot;null&quot;, disableAnsi=&quot;null&quot;, noConsoleNoAnsi=&quot;null&quot;, header=&quot;null&quot;, footer=&quot;null&quot;)
+2021-09-19 04:07:14,359 Test worker DEBUG PluginManager 'Converter' found 44 plugins
+2021-09-19 04:07:14,374 Test worker DEBUG Building Plugin[name=appender, class=org.apache.logging.log4j.core.appender.ConsoleAppender].
+2021-09-19 04:07:14,384 Test worker DEBUG ConsoleAppender$Builder(target=&quot;SYSTEM_OUT&quot;, follow=&quot;null&quot;, direct=&quot;null&quot;, bufferedIo=&quot;null&quot;, bufferSize=&quot;null&quot;, immediateFlush=&quot;null&quot;, ignoreExceptions=&quot;null&quot;, PatternLayout(%d{yyyy-MM-dd hh:mm:ss} %5p [%c] %m%n), name=&quot;console&quot;, Configuration(C:\Users\82102\IdeaProjects\g2\build\resources\main\log4j2.xml), Filter=null, ={})
+2021-09-19 04:07:14,389 Test worker DEBUG Starting OutputStreamManager SYSTEM_OUT.false.false
+2021-09-19 04:07:14,390 Test worker DEBUG Building Plugin[name=appenders, class=org.apache.logging.log4j.core.config.AppendersPlugin].
+2021-09-19 04:07:14,394 Test worker DEBUG createAppenders(={console})
+2021-09-19 04:07:14,395 Test worker DEBUG Building Plugin[name=appender-ref, class=org.apache.logging.log4j.core.config.AppenderRef].
+2021-09-19 04:07:14,402 Test worker DEBUG createAppenderRef(ref=&quot;console&quot;, level=&quot;null&quot;, Filter=null)
+2021-09-19 04:07:14,402 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2021-09-19 04:07:14,405 Test worker DEBUG createLogger(additivity=&quot;false&quot;, level=&quot;INFO&quot;, name=&quot;jdbc.sqltiming&quot;, includeLocation=&quot;null&quot;, ={console}, ={}, Configuration(C:\Users\82102\IdeaProjects\g2\build\resources\main\log4j2.xml), Filter=null)
+2021-09-19 04:07:14,408 Test worker DEBUG Building Plugin[name=appender-ref, class=org.apache.logging.log4j.core.config.AppenderRef].
+2021-09-19 04:07:14,410 Test worker DEBUG createAppenderRef(ref=&quot;console&quot;, level=&quot;null&quot;, Filter=null)
+2021-09-19 04:07:14,411 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2021-09-19 04:07:14,412 Test worker DEBUG createLogger(additivity=&quot;false&quot;, level=&quot;INFO&quot;, name=&quot;java.sql.Connection&quot;, includeLocation=&quot;null&quot;, ={console}, ={}, Configuration(C:\Users\82102\IdeaProjects\g2\build\resources\main\log4j2.xml), Filter=null)
+2021-09-19 04:07:14,413 Test worker DEBUG Building Plugin[name=appender-ref, class=org.apache.logging.log4j.core.config.AppenderRef].
+2021-09-19 04:07:14,415 Test worker DEBUG createAppenderRef(ref=&quot;console&quot;, level=&quot;null&quot;, Filter=null)
+2021-09-19 04:07:14,415 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2021-09-19 04:07:14,418 Test worker DEBUG createLogger(additivity=&quot;false&quot;, level=&quot;INFO&quot;, name=&quot;java.sql.Statement&quot;, includeLocation=&quot;null&quot;, ={console}, ={}, Configuration(C:\Users\82102\IdeaProjects\g2\build\resources\main\log4j2.xml), Filter=null)
+2021-09-19 04:07:14,419 Test worker DEBUG Building Plugin[name=appender-ref, class=org.apache.logging.log4j.core.config.AppenderRef].
+2021-09-19 04:07:14,420 Test worker DEBUG createAppenderRef(ref=&quot;console&quot;, level=&quot;null&quot;, Filter=null)
+2021-09-19 04:07:14,421 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2021-09-19 04:07:14,422 Test worker DEBUG createLogger(additivity=&quot;false&quot;, level=&quot;INFO&quot;, name=&quot;java.sql.PreparedStatement&quot;, includeLocation=&quot;null&quot;, ={console}, ={}, Configuration(C:\Users\82102\IdeaProjects\g2\build\resources\main\log4j2.xml), Filter=null)
+2021-09-19 04:07:14,422 Test worker DEBUG Building Plugin[name=appender-ref, class=org.apache.logging.log4j.core.config.AppenderRef].
+2021-09-19 04:07:14,423 Test worker DEBUG createAppenderRef(ref=&quot;console&quot;, level=&quot;null&quot;, Filter=null)
+2021-09-19 04:07:14,424 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2021-09-19 04:07:14,426 Test worker DEBUG createLogger(additivity=&quot;false&quot;, level=&quot;INFO&quot;, name=&quot;java.sql.ResultSet&quot;, includeLocation=&quot;null&quot;, ={console}, ={}, Configuration(C:\Users\82102\IdeaProjects\g2\build\resources\main\log4j2.xml), Filter=null)
+2021-09-19 04:07:14,427 Test worker DEBUG Building Plugin[name=appender-ref, class=org.apache.logging.log4j.core.config.AppenderRef].
+2021-09-19 04:07:14,428 Test worker DEBUG createAppenderRef(ref=&quot;console&quot;, level=&quot;null&quot;, Filter=null)
+2021-09-19 04:07:14,429 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2021-09-19 04:07:14,430 Test worker DEBUG createLogger(additivity=&quot;false&quot;, level=&quot;DEBUG&quot;, name=&quot;org.springframework.jdbc&quot;, includeLocation=&quot;null&quot;, ={console}, ={}, Configuration(C:\Users\82102\IdeaProjects\g2\build\resources\main\log4j2.xml), Filter=null)
+2021-09-19 04:07:14,431 Test worker DEBUG Building Plugin[name=appender-ref, class=org.apache.logging.log4j.core.config.AppenderRef].
+2021-09-19 04:07:14,432 Test worker DEBUG createAppenderRef(ref=&quot;console&quot;, level=&quot;null&quot;, Filter=null)
+2021-09-19 04:07:14,434 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2021-09-19 04:07:14,436 Test worker DEBUG createLogger(additivity=&quot;false&quot;, level=&quot;INFO&quot;, name=&quot;com.zaxxer&quot;, includeLocation=&quot;null&quot;, ={console}, ={}, Configuration(C:\Users\82102\IdeaProjects\g2\build\resources\main\log4j2.xml), Filter=null)
+2021-09-19 04:07:14,437 Test worker DEBUG Building Plugin[name=AppenderRef, class=org.apache.logging.log4j.core.config.AppenderRef].
+2021-09-19 04:07:14,439 Test worker DEBUG createAppenderRef(ref=&quot;console&quot;, level=&quot;null&quot;, Filter=null)
+2021-09-19 04:07:14,439 Test worker DEBUG Building Plugin[name=root, class=org.apache.logging.log4j.core.config.LoggerConfig$RootLogger].
+2021-09-19 04:07:14,441 Test worker DEBUG createLogger(additivity=&quot;false&quot;, level=&quot;INFO&quot;, includeLocation=&quot;null&quot;, ={console}, ={}, Configuration(C:\Users\82102\IdeaProjects\g2\build\resources\main\log4j2.xml), Filter=null)
+2021-09-19 04:07:14,443 Test worker DEBUG Building Plugin[name=appender-ref, class=org.apache.logging.log4j.core.config.AppenderRef].
+2021-09-19 04:07:14,444 Test worker DEBUG createAppenderRef(ref=&quot;console&quot;, level=&quot;null&quot;, Filter=null)
+2021-09-19 04:07:14,445 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2021-09-19 04:07:14,446 Test worker DEBUG createLogger(additivity=&quot;false&quot;, level=&quot;TRACE&quot;, name=&quot;org.springframework.security&quot;, includeLocation=&quot;null&quot;, ={console}, ={}, Configuration(C:\Users\82102\IdeaProjects\g2\build\resources\main\log4j2.xml), Filter=null)
+2021-09-19 04:07:14,446 Test worker DEBUG Building Plugin[name=loggers, class=org.apache.logging.log4j.core.config.LoggersPlugin].
+2021-09-19 04:07:14,448 Test worker DEBUG createLoggers(={jdbc.sqltiming, java.sql.Connection, java.sql.Statement, java.sql.PreparedStatement, java.sql.ResultSet, org.springframework.jdbc, com.zaxxer, root, org.springframework.security})
+2021-09-19 04:07:14,451 Test worker DEBUG Configuration XmlConfiguration[location=C:\Users\82102\IdeaProjects\g2\build\resources\main\log4j2.xml] initialized
+2021-09-19 04:07:14,451 Test worker DEBUG Starting configuration XmlConfiguration[location=C:\Users\82102\IdeaProjects\g2\build\resources\main\log4j2.xml]
+2021-09-19 04:07:14,452 Test worker DEBUG Started configuration XmlConfiguration[location=C:\Users\82102\IdeaProjects\g2\build\resources\main\log4j2.xml] OK.
+2021-09-19 04:07:14,453 Test worker DEBUG Shutting down OutputStreamManager SYSTEM_OUT.false.false-1
+2021-09-19 04:07:14,454 Test worker DEBUG OutputStream closed
+2021-09-19 04:07:14,455 Test worker DEBUG Shut down OutputStreamManager SYSTEM_OUT.false.false-1, all resources released: true
+2021-09-19 04:07:14,455 Test worker DEBUG Appender DefaultConsole-1 stopped with status true
+2021-09-19 04:07:14,456 Test worker DEBUG Stopped org.apache.logging.log4j.core.config.DefaultConfiguration@35726883 OK
+2021-09-19 04:07:14,545 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2f0e140b
+2021-09-19 04:07:14,551 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2f0e140b,component=StatusLogger
+2021-09-19 04:07:14,553 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2f0e140b,component=ContextSelector
+2021-09-19 04:07:14,556 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2f0e140b,component=Loggers,name=
+2021-09-19 04:07:14,557 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2f0e140b,component=Loggers,name=com.zaxxer
+2021-09-19 04:07:14,558 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2f0e140b,component=Loggers,name=java.sql.Connection
+2021-09-19 04:07:14,559 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2f0e140b,component=Loggers,name=java.sql.ResultSet
+2021-09-19 04:07:14,560 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2f0e140b,component=Loggers,name=java.sql.Statement
+2021-09-19 04:07:14,561 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2f0e140b,component=Loggers,name=org.springframework.security
+2021-09-19 04:07:14,562 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2f0e140b,component=Loggers,name=jdbc.sqltiming
+2021-09-19 04:07:14,562 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2f0e140b,component=Loggers,name=java.sql.PreparedStatement
+2021-09-19 04:07:14,562 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2f0e140b,component=Loggers,name=org.springframework.jdbc
+2021-09-19 04:07:14,564 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2f0e140b,component=Appenders,name=console
+2021-09-19 04:07:14,569 Test worker DEBUG org.apache.logging.log4j.core.util.SystemClock supports precise timestamps.
+2021-09-19 04:07:14,570 Test worker DEBUG Reconfiguration complete for context[name=2f0e140b] at URI C:\Users\82102\IdeaProjects\g2\build\resources\main\log4j2.xml (org.apache.logging.log4j.core.LoggerContext@16691771) with optional ClassLoader: null
+2021-09-19 04:07:14,570 Test worker DEBUG Shutdown hook enabled. Registering a new one.
+2021-09-19 04:07:14,571 Test worker DEBUG LoggerContext[name=2f0e140b, org.apache.logging.log4j.core.LoggerContext@16691771] started OK.
+2021-09-19 04:07:14  INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-09-19 04:07:14,707 Test worker DEBUG AsyncLogger.ThreadNameStrategy=UNCACHED (user specified null, default is UNCACHED)
+2021-09-19 04:07:14,708 Test worker DEBUG org.apache.logging.log4j.core.util.SystemClock supports precise timestamps.
+2021-09-19 04:07:14  INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@265fd6bf, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@39454e70, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@627d3803, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@73da5383, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2b688969, org.springframework.test.context.transaction.TransactionalTestExecutionListener@384d64ba, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@337bee90, org.springframework.test.context.event.EventPublishingTestExecutionListener@121ce537]
+2021-09-19 04:07:16 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] Fetching JDBC Connection from DataSource
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=103, title=title100, content=content100, writer=user0, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=102, title=title99, content=content99, writer=user9, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=101, title=title98, content=content98, writer=user8, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=100, title=title97, content=content97, writer=user7, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=99, title=title96, content=content96, writer=user6, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=98, title=title95, content=content95, writer=user5, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=97, title=title94, content=content94, writer=user4, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=96, title=title93, content=content93, writer=user3, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=95, title=title92, content=content92, writer=user2, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=94, title=title91, content=content91, writer=user1, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=93, title=title90, content=content90, writer=user0, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=92, title=title89, content=content89, writer=user9, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=91, title=title88, content=content88, writer=user8, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=90, title=title87, content=content87, writer=user7, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=89, title=title86, content=content86, writer=user6, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=88, title=title85, content=content85, writer=user5, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=87, title=title84, content=content84, writer=user4, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=86, title=title83, content=content83, writer=user3, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=85, title=title82, content=content82, writer=user2, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=84, title=title81, content=content81, writer=user1, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=83, title=title80, content=content80, writer=user0, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=82, title=title79, content=content79, writer=user9, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=81, title=title78, content=content78, writer=user8, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=80, title=title77, content=content77, writer=user7, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=79, title=title76, content=content76, writer=user6, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=78, title=title75, content=content75, writer=user5, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=77, title=title74, content=content74, writer=user4, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=76, title=title73, content=content73, writer=user3, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=75, title=title72, content=content72, writer=user2, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=74, title=title71, content=content71, writer=user1, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=73, title=title70, content=content70, writer=user0, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=72, title=title69, content=content69, writer=user9, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=71, title=title68, content=content68, writer=user8, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=70, title=title67, content=content67, writer=user7, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=69, title=title66, content=content66, writer=user6, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=68, title=title65, content=content65, writer=user5, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=67, title=title64, content=content64, writer=user4, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=66, title=title63, content=content63, writer=user3, regDate=2021-09-19T03:39:44, modDate=2021-09-19T03:39:44, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=65, title=title62, content=content62, writer=user2, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=64, title=title61, content=content61, writer=user1, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=63, title=title60, content=content60, writer=user0, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=62, title=title59, content=content59, writer=user9, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=61, title=title58, content=content58, writer=user8, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=60, title=title57, content=content57, writer=user7, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=59, title=title56, content=content56, writer=user6, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=58, title=title55, content=content55, writer=user5, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=57, title=title54, content=content54, writer=user4, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=56, title=title53, content=content53, writer=user3, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=55, title=title52, content=content52, writer=user2, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=54, title=title51, content=content51, writer=user1, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=53, title=title50, content=content50, writer=user0, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=52, title=title49, content=content49, writer=user9, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=51, title=title48, content=content48, writer=user8, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=50, title=title47, content=content47, writer=user7, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=49, title=title46, content=content46, writer=user6, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=48, title=title45, content=content45, writer=user5, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=47, title=title44, content=content44, writer=user4, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=46, title=title43, content=content43, writer=user3, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=45, title=title42, content=content42, writer=user2, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=44, title=title41, content=content41, writer=user1, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=43, title=title40, content=content40, writer=user0, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=42, title=title39, content=content39, writer=user9, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=41, title=title38, content=content38, writer=user8, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=40, title=title37, content=content37, writer=user7, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=39, title=title36, content=content36, writer=user6, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=38, title=title35, content=content35, writer=user5, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=37, title=title34, content=content34, writer=user4, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=36, title=title33, content=content33, writer=user3, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=35, title=title32, content=content32, writer=user2, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=34, title=title31, content=content31, writer=user1, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=33, title=title30, content=content30, writer=user0, regDate=2021-09-19T03:39:43, modDate=2021-09-19T03:39:43, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=32, title=title29, content=content29, writer=user9, regDate=2021-09-19T03:39:42, modDate=2021-09-19T03:39:42, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=31, title=title28, content=content28, writer=user8, regDate=2021-09-19T03:39:42, modDate=2021-09-19T03:39:42, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=30, title=title27, content=content27, writer=user7, regDate=2021-09-19T03:39:42, modDate=2021-09-19T03:39:42, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=29, title=title26, content=content26, writer=user6, regDate=2021-09-19T03:39:42, modDate=2021-09-19T03:39:42, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=28, title=title25, content=content25, writer=user5, regDate=2021-09-19T03:39:42, modDate=2021-09-19T03:39:42, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=27, title=title24, content=content24, writer=user4, regDate=2021-09-19T03:39:42, modDate=2021-09-19T03:39:42, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=26, title=title23, content=content23, writer=user3, regDate=2021-09-19T03:39:42, modDate=2021-09-19T03:39:42, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=25, title=title22, content=content22, writer=user2, regDate=2021-09-19T03:39:42, modDate=2021-09-19T03:39:42, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=24, title=title21, content=content21, writer=user1, regDate=2021-09-19T03:39:42, modDate=2021-09-19T03:39:42, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=23, title=title20, content=content20, writer=user0, regDate=2021-09-19T03:39:42, modDate=2021-09-19T03:39:42, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=22, title=title19, content=content19, writer=user9, regDate=2021-09-19T03:39:42, modDate=2021-09-19T03:39:42, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=21, title=title18, content=content18, writer=user8, regDate=2021-09-19T03:39:42, modDate=2021-09-19T03:39:42, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=20, title=title17, content=content17, writer=user7, regDate=2021-09-19T03:39:42, modDate=2021-09-19T03:39:42, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=19, title=title16, content=content16, writer=user6, regDate=2021-09-19T03:39:42, modDate=2021-09-19T03:39:42, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=18, title=title15, content=content15, writer=user5, regDate=2021-09-19T03:39:42, modDate=2021-09-19T03:39:42, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=17, title=title14, content=content14, writer=user4, regDate=2021-09-19T03:39:42, modDate=2021-09-19T03:39:42, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=16, title=title13, content=content13, writer=user3, regDate=2021-09-19T03:39:42, modDate=2021-09-19T03:39:42, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=15, title=title12, content=content12, writer=user2, regDate=2021-09-19T03:39:42, modDate=2021-09-19T03:39:42, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=14, title=title11, content=content11, writer=user1, regDate=2021-09-19T03:39:42, modDate=2021-09-19T03:39:42, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=13, title=title10, content=content10, writer=user0, regDate=2021-09-19T03:39:42, modDate=2021-09-19T03:39:42, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=12, title=title9, content=content9, writer=user9, regDate=2021-09-19T03:39:42, modDate=2021-09-19T03:39:42, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=11, title=title8, content=content8, writer=user8, regDate=2021-09-19T03:39:42, modDate=2021-09-19T03:39:42, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=10, title=title7, content=content7, writer=user7, regDate=2021-09-19T03:39:42, modDate=2021-09-19T03:39:42, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=9, title=title6, content=content6, writer=user6, regDate=2021-09-19T03:39:42, modDate=2021-09-19T03:39:42, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=8, title=title5, content=content5, writer=user5, regDate=2021-09-19T03:39:42, modDate=2021-09-19T03:39:42, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=7, title=title4, content=content4, writer=user4, regDate=2021-09-19T03:39:42, modDate=2021-09-19T03:39:42, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=6, title=title3, content=content3, writer=user3, regDate=2021-09-19T03:39:42, modDate=2021-09-19T03:39:42, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=5, title=title2, content=content2, writer=user2, regDate=2021-09-19T03:39:42, modDate=2021-09-19T03:39:42, reCount=3, likeCnt=5)
+2021-09-19 04:07:16  INFO [org.team.g2.mapper.ReqBoardMapperTests] ReqBoard(bno=4, title=title1, content=content1, writer=user1, regDate=2021-09-19T03:39:41, modDate=2021-09-19T03:39:41, reCount=3, likeCnt=5)
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Warning: Nashorn engine is planned to be removed from a future JDK release
+[Test worker] WARN org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'reqBoardMapper' and 'org.team.g2.reqboard.mapper.ReqBoardMapper' mapperInterface. Bean already defined with the same name!
+[Test worker] WARN org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'timeMapper' and 'org.team.g2.reqboard.mapper.TimeMapper' mapperInterface. Bean already defined with the same name!
+[Test worker] WARN org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.team.g2.reqboard.mapper]' package. Please check your configuration.
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+[Test worker] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[Test worker] INFO jdbc.connection - 1. Connection opened
+[Test worker] INFO jdbc.audit - 1. Connection.new Connection returned 
+[Test worker] INFO jdbc.audit - 1. Connection.getNetworkTimeout() returned 0
+[Test worker] INFO jdbc.audit - 1. Connection.isReadOnly() returned false
+[Test worker] INFO jdbc.audit - 1. Connection.getAutoCommit() returned true
+[Test worker] INFO jdbc.audit - 1. Connection.isValid(1) returned true
+[Test worker] INFO jdbc.audit - 1. Connection.getTransactionIsolation() returned 4
+[Test worker] INFO com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@206f1d87
+[Test worker] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[HikariPool-1 connection adder] INFO jdbc.connection - 2. Connection opened
+[HikariPool-1 connection adder] INFO jdbc.audit - 2. Connection.new Connection returned 
+[HikariPool-1 connection adder] INFO jdbc.audit - 2. Connection.isReadOnly() returned false
+[HikariPool-1 connection adder] INFO jdbc.audit - 2. Connection.getAutoCommit() returned true
+[HikariPool-1 connection adder] INFO jdbc.connection - 3. Connection opened
+[HikariPool-1 connection adder] INFO jdbc.audit - 3. Connection.new Connection returned 
+[HikariPool-1 connection adder] INFO jdbc.audit - 3. Connection.isReadOnly() returned false
+[HikariPool-1 connection adder] INFO jdbc.audit - 3. Connection.getAutoCommit() returned true
+[HikariPool-1 connection adder] INFO jdbc.connection - 4. Connection opened
+[HikariPool-1 connection adder] INFO jdbc.audit - 4. Connection.new Connection returned 
+[Test worker] INFO jdbc.audit - 1. Connection.getAutoCommit() returned true
+[HikariPool-1 connection adder] INFO jdbc.audit - 4. Connection.isReadOnly() returned false
+[HikariPool-1 connection adder] INFO jdbc.audit - 4. Connection.getAutoCommit() returned true
+[Test worker] INFO jdbc.audit - 1. PreparedStatement.new PreparedStatement returned 
+[Test worker] INFO jdbc.audit - 1. Connection.prepareStatement(select * from tbl_reqboard order by bno desc limit 0,100) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@2606a13c
+[Test worker] INFO jdbc.sqlonly - select * from tbl_reqboard order by bno desc limit 0,100
+
+[Test worker] INFO jdbc.sqltiming - select * from tbl_reqboard order by bno desc limit 0,100
+ {executed in 49 msec}
+[Test worker] INFO jdbc.audit - 1. PreparedStatement.execute() returned true
+[HikariPool-1 connection adder] INFO jdbc.connection - 5. Connection opened
+[HikariPool-1 connection adder] INFO jdbc.audit - 5. Connection.new Connection returned 
+[Test worker] INFO jdbc.resultset - 1. ResultSet.new ResultSet returned 
+[Test worker] INFO jdbc.audit - 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@26df8546
+[HikariPool-1 connection adder] INFO jdbc.audit - 5. Connection.isReadOnly() returned false
+[HikariPool-1 connection adder] INFO jdbc.audit - 5. Connection.getAutoCommit() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getMetaData() returned com.mysql.cj.jdbc.result.ResultSetMetaData@491e43d9 - Field level information: 
+	com.mysql.cj.result.Field@58aa4e80[dbName=gstreet,tableName=tbl_reqboard,originalTableName=tbl_reqboard,columnName=bno,originalColumnName=bno,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags= AUTO_INCREMENT PRIMARY_KEY, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@53f6bd49[dbName=gstreet,tableName=tbl_reqboard,originalTableName=tbl_reqboard,columnName=title,originalColumnName=title,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf-8]
+	com.mysql.cj.result.Field@5029582[dbName=gstreet,tableName=tbl_reqboard,originalTableName=tbl_reqboard,columnName=writer,originalColumnName=writer,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf-8]
+	com.mysql.cj.result.Field@3eb91e70[dbName=gstreet,tableName=tbl_reqboard,originalTableName=tbl_reqboard,columnName=content,originalColumnName=content,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf-8]
+	com.mysql.cj.result.Field@34ed9969[dbName=gstreet,tableName=tbl_reqboard,originalTableName=tbl_reqboard,columnName=regDate,originalColumnName=regDate,mysqlType=7(FIELD_TYPE_TIMESTAMP),sqlType=93,flags= BINARY, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@52177648[dbName=gstreet,tableName=tbl_reqboard,originalTableName=tbl_reqboard,columnName=modDate,originalColumnName=modDate,mysqlType=7(FIELD_TYPE_TIMESTAMP),sqlType=93,flags= BINARY, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@43a8470d[dbName=gstreet,tableName=tbl_reqboard,originalTableName=tbl_reqboard,columnName=reCount,originalColumnName=reCount,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags=, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@35948b96[dbName=gstreet,tableName=tbl_reqboard,originalTableName=tbl_reqboard,columnName=likeCnt,originalColumnName=likeCnt,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags=, charsetIndex=63, charsetName=ISO-8859-1]
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getType() returned 1003
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 103
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title100
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user0
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content100
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 102
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title99
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user9
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content99
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 101
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title98
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user8
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content98
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 100
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title97
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user7
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content97
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 99
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title96
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user6
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content96
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 98
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title95
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content95
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 97
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title94
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user4
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content94
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 96
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title93
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content93
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 95
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title92
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user2
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content92
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 94
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title91
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user1
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content91
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 93
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title90
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user0
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content90
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 92
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title89
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user9
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content89
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 91
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title88
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user8
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content88
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 90
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title87
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user7
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content87
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 89
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title86
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user6
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content86
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 88
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title85
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content85
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 87
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title84
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user4
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content84
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 86
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title83
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content83
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 85
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title82
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user2
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content82
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 84
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title81
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user1
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content81
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 83
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title80
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user0
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content80
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 82
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title79
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user9
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content79
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 81
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title78
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user8
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content78
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 80
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title77
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user7
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content77
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 79
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title76
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user6
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content76
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 78
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title75
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content75
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 77
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title74
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user4
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content74
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 76
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title73
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content73
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 75
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title72
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user2
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content72
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 74
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title71
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user1
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content71
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 73
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title70
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user0
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content70
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 72
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title69
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user9
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content69
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 71
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title68
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user8
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content68
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 70
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title67
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user7
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content67
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 69
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title66
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user6
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content66
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 68
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title65
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content65
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 67
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title64
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user4
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content64
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 66
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title63
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content63
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 65
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title62
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user2
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content62
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 64
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title61
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user1
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content61
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 63
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title60
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user0
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content60
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 62
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title59
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user9
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content59
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 61
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title58
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user8
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content58
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 60
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title57
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user7
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content57
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 59
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title56
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user6
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content56
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 58
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title55
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content55
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 57
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title54
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user4
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content54
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 56
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title53
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content53
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 55
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title52
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user2
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content52
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 54
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title51
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user1
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content51
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 53
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title50
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user0
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content50
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 52
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title49
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user9
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content49
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 51
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title48
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user8
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content48
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 50
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title47
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user7
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content47
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 49
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title46
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user6
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content46
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 48
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title45
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content45
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[HikariPool-1 connection adder] INFO jdbc.connection - 6. Connection opened
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[HikariPool-1 connection adder] INFO jdbc.audit - 6. Connection.new Connection returned 
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 47
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user4
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 46
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 45
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user2
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 44
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title41
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user1
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content41
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title40
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user0
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content40
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title39
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user9
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content39
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[HikariPool-1 connection adder] INFO jdbc.audit - 6. Connection.isReadOnly() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[HikariPool-1 connection adder] INFO jdbc.audit - 6. Connection.getAutoCommit() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 41
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title38
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user8
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content38
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 40
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title37
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user7
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content37
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 39
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title36
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user6
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content36
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 38
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title35
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content35
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 37
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title34
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user4
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content34
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 36
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title33
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content33
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 35
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title32
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user2
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content32
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 34
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title31
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user1
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content31
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 33
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title30
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user0
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content30
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:43
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 32
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title29
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user9
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content29
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 31
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title28
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user8
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content28
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 30
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title27
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user7
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content27
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 29
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title26
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user6
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content26
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 28
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title25
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content25
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 27
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title24
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user4
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content24
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 26
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title23
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content23
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 25
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title22
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user2
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content22
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 24
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title21
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user1
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content21
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 23
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title20
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user0
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content20
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 22
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title19
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user9
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content19
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 21
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title18
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user8
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content18
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 20
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title17
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user7
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content17
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 19
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title16
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user6
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content16
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 18
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title15
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content15
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 17
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title14
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user4
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content14
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 16
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title13
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content13
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 15
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title12
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user2
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content12
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 14
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title11
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user1
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content11
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 13
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title10
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user0
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content10
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 12
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title9
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user9
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content9
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 11
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title8
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user8
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content8
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 10
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title7
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user7
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content7
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 9
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title6
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user6
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content6
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 8
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 7
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title4
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user4
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content4
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 6
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title2
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user2
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content2
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:42
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned true
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getLong(bno) returned 4
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(title) returned title1
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(writer) returned user1
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getString(content) returned content1
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(regDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:41
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getObject(modDate,class java.time.LocalDateTime) returned 2021-09-19T03:39:41
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(reCount) returned 3
+[Test worker] INFO jdbc.resultset - 1. ResultSet.getInt(likeCnt) returned 5
+[Test worker] INFO jdbc.resultset - 1. ResultSet.isClosed() returned false
+[Test worker] INFO jdbc.resultsettable - 
+|----|---------|-------|-----------|---------|---------|--------|--------|
+|bno |title    |writer |content    |regdate  |moddate  |recount |likecnt |
+|----|---------|-------|-----------|---------|---------|--------|--------|
+|103 |title100 |user0  |content100 |[unread] |[unread] |3       |5       |
+|102 |title99  |user9  |content99  |[unread] |[unread] |3       |5       |
+|101 |title98  |user8  |content98  |[unread] |[unread] |3       |5       |
+|100 |title97  |user7  |content97  |[unread] |[unread] |3       |5       |
+|99  |title96  |user6  |content96  |[unread] |[unread] |3       |5       |
+|98  |title95  |user5  |content95  |[unread] |[unread] |3       |5       |
+|97  |title94  |user4  |content94  |[unread] |[unread] |3       |5       |
+|96  |title93  |user3  |content93  |[unread] |[unread] |3       |5       |
+|95  |title92  |user2  |content92  |[unread] |[unread] |3       |5       |
+|94  |title91  |user1  |content91  |[unread] |[unread] |3       |5       |
+|93  |title90  |user0  |content90  |[unread] |[unread] |3       |5       |
+|92  |title89  |user9  |content89  |[unread] |[unread] |3       |5       |
+|91  |title88  |user8  |content88  |[unread] |[unread] |3       |5       |
+|90  |title87  |user7  |content87  |[unread] |[unread] |3       |5       |
+|89  |title86  |user6  |content86  |[unread] |[unread] |3       |5       |
+|88  |title85  |user5  |content85  |[unread] |[unread] |3       |5       |
+|87  |title84  |user4  |content84  |[unread] |[unread] |3       |5       |
+|86  |title83  |user3  |content83  |[unread] |[unread] |3       |5       |
+|85  |title82  |user2  |content82  |[unread] |[unread] |3       |5       |
+|84  |title81  |user1  |content81  |[unread] |[unread] |3       |5       |
+|83  |title80  |user0  |content80  |[unread] |[unread] |3       |5       |
+|82  |title79  |user9  |content79  |[unread] |[unread] |3       |5       |
+|81  |title78  |user8  |content78  |[unread] |[unread] |3       |5       |
+|80  |title77  |user7  |content77  |[unread] |[unread] |3       |5       |
+|79  |title76  |user6  |content76  |[unread] |[unread] |3       |5       |
+|78  |title75  |user5  |content75  |[unread] |[unread] |3       |5       |
+|77  |title74  |user4  |content74  |[unread] |[unread] |3       |5       |
+|76  |title73  |user3  |content73  |[unread] |[unread] |3       |5       |
+|75  |title72  |user2  |content72  |[unread] |[unread] |3       |5       |
+|74  |title71  |user1  |content71  |[unread] |[unread] |3       |5       |
+|73  |title70  |user0  |content70  |[unread] |[unread] |3       |5       |
+|72  |title69  |user9  |content69  |[unread] |[unread] |3       |5       |
+|71  |title68  |user8  |content68  |[unread] |[unread] |3       |5       |
+|70  |title67  |user7  |content67  |[unread] |[unread] |3       |5       |
+|69  |title66  |user6  |content66  |[unread] |[unread] |3       |5       |
+|68  |title65  |user5  |content65  |[unread] |[unread] |3       |5       |
+|67  |title64  |user4  |content64  |[unread] |[unread] |3       |5       |
+|66  |title63  |user3  |content63  |[unread] |[unread] |3       |5       |
+|65  |title62  |user2  |content62  |[unread] |[unread] |3       |5       |
+|64  |title61  |user1  |content61  |[unread] |[unread] |3       |5       |
+|63  |title60  |user0  |content60  |[unread] |[unread] |3       |5       |
+|62  |title59  |user9  |content59  |[unread] |[unread] |3       |5       |
+|61  |title58  |user8  |content58  |[unread] |[unread] |3       |5       |
+|60  |title57  |user7  |content57  |[unread] |[unread] |3       |5       |
+|59  |title56  |user6  |content56  |[unread] |[unread] |3       |5       |
+|58  |title55  |user5  |content55  |[unread] |[unread] |3       |5       |
+|57  |title54  |user4  |content54  |[unread] |[unread] |3       |5       |
+|56  |title53  |user3  |content53  |[unread] |[unread] |3       |5       |
+|55  |title52  |user2  |content52  |[unread] |[unread] |3       |5       |
+|54  |title51  |user1  |content51  |[unread] |[unread] |3       |5       |
+|53  |title50  |user0  |content50  |[unread] |[unread] |3       |5       |
+|52  |title49  |user9  |content49  |[unread] |[unread] |3       |5       |
+|51  |title48  |user8  |content48  |[unread] |[unread] |3       |5       |
+|50  |title47  |user7  |content47  |[unread] |[unread] |3       |5       |
+|49  |title46  |user6  |content46  |[unread] |[unread] |3       |5       |
+|48  |title45  |user5  |content45  |[unread] |[unread] |3       |5       |
+|47  |title44  |user4  |content44  |[unread] |[unread] |3       |5       |
+|46  |title43  |user3  |content43  |[unread] |[unread] |3       |5       |
+|45  |title42  |user2  |content42  |[unread] |[unread] |3       |5       |
+|44  |title41  |user1  |content41  |[unread] |[unread] |3       |5       |
+|43  |title40  |user0  |content40  |[unread] |[unread] |3       |5       |
+|42  |title39  |user9  |content39  |[unread] |[unread] |3       |5       |
+|41  |title38  |user8  |content38  |[unread] |[unread] |3       |5       |
+|40  |title37  |user7  |content37  |[unread] |[unread] |3       |5       |
+|39  |title36  |user6  |content36  |[unread] |[unread] |3       |5       |
+|38  |title35  |user5  |content35  |[unread] |[unread] |3       |5       |
+|37  |title34  |user4  |content34  |[unread] |[unread] |3       |5       |
+|36  |title33  |user3  |content33  |[unread] |[unread] |3       |5       |
+|35  |title32  |user2  |content32  |[unread] |[unread] |3       |5       |
+|34  |title31  |user1  |content31  |[unread] |[unread] |3       |5       |
+|33  |title30  |user0  |content30  |[unread] |[unread] |3       |5       |
+|32  |title29  |user9  |content29  |[unread] |[unread] |3       |5       |
+|31  |title28  |user8  |content28  |[unread] |[unread] |3       |5       |
+|30  |title27  |user7  |content27  |[unread] |[unread] |3       |5       |
+|29  |title26  |user6  |content26  |[unread] |[unread] |3       |5       |
+|28  |title25  |user5  |content25  |[unread] |[unread] |3       |5       |
+|27  |title24  |user4  |content24  |[unread] |[unread] |3       |5       |
+|26  |title23  |user3  |content23  |[unread] |[unread] |3       |5       |
+|25  |title22  |user2  |content22  |[unread] |[unread] |3       |5       |
+|24  |title21  |user1  |content21  |[unread] |[unread] |3       |5       |
+|23  |title20  |user0  |content20  |[unread] |[unread] |3       |5       |
+|22  |title19  |user9  |content19  |[unread] |[unread] |3       |5       |
+|21  |title18  |user8  |content18  |[unread] |[unread] |3       |5       |
+|20  |title17  |user7  |content17  |[unread] |[unread] |3       |5       |
+|19  |title16  |user6  |content16  |[unread] |[unread] |3       |5       |
+|18  |title15  |user5  |content15  |[unread] |[unread] |3       |5       |
+|17  |title14  |user4  |content14  |[unread] |[unread] |3       |5       |
+|16  |title13  |user3  |content13  |[unread] |[unread] |3       |5       |
+|15  |title12  |user2  |content12  |[unread] |[unread] |3       |5       |
+|14  |title11  |user1  |content11  |[unread] |[unread] |3       |5       |
+|13  |title10  |user0  |content10  |[unread] |[unread] |3       |5       |
+|12  |title9   |user9  |content9   |[unread] |[unread] |3       |5       |
+|11  |title8   |user8  |content8   |[unread] |[unread] |3       |5       |
+|10  |title7   |user7  |content7   |[unread] |[unread] |3       |5       |
+|9   |title6   |user6  |content6   |[unread] |[unread] |3       |5       |
+|8   |title5   |user5  |content5   |[unread] |[unread] |3       |5       |
+|7   |title4   |user4  |content4   |[unread] |[unread] |3       |5       |
+|6   |title3   |user3  |content3   |[unread] |[unread] |3       |5       |
+|5   |title2   |user2  |content2   |[unread] |[unread] |3       |5       |
+|4   |title1   |user1  |content1   |[unread] |[unread] |3       |5       |
+|----|---------|-------|-----------|---------|---------|--------|--------|
+
+[Test worker] INFO jdbc.resultset - 1. ResultSet.next() returned false
+[Test worker] INFO jdbc.resultset - 1. ResultSet.close() returned void
+[Test worker] INFO jdbc.audit - 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaDataUsingInfoSchema@420409c9
+[Test worker] INFO jdbc.audit - 1. PreparedStatement.getMoreResults() returned false
+[Test worker] INFO jdbc.audit - 1. PreparedStatement.getUpdateCount() returned -1
+[Test worker] INFO jdbc.audit - 1. PreparedStatement.close() returned 
+[Test worker] INFO jdbc.audit - 1. Connection.clearWarnings() returned 
+[HikariPool-1 connection adder] INFO jdbc.connection - 7. Connection opened
+[HikariPool-1 connection adder] INFO jdbc.audit - 7. Connection.new Connection returned 
+[HikariPool-1 connection adder] INFO jdbc.audit - 7. Connection.isReadOnly() returned false
+[HikariPool-1 connection adder] INFO jdbc.audit - 7. Connection.getAutoCommit() returned true
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.9</a> at 2021. 9. 19. 오전 4:07:17</p>
+</div>
+</div>
+</body>
+</html>

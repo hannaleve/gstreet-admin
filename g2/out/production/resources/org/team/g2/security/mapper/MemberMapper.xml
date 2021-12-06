@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.team.g2.security.mapper.MemberMapper">
+    <resultMap id="memberMap" type="org.team.g2.security.domain.Member">
+        <id property="userID" column="userID"></id>
+        <result property="userPW" column="userPW"></result>
+        <result property="userEnabled" column="userEnabled"></result>
+        <collection property="roleList" resultMap="memberRoleMap"></collection>
+    </resultMap>
+
+    <resultMap id="memberRoleMap" type="org.team.g2.security.domain.MemberRole">
+        <result property="userID" column="userID"></result>
+        <result property="role" column="role"></result>
+    </resultMap>
+
+    <select id="findByUserID" resultMap="memberMap">
+        select * from tbl_member m inner join tbl_member_role tmr on m.userID = tmr.userID
+        where m.userID = #{userID}
+    </select>
+</mapper>

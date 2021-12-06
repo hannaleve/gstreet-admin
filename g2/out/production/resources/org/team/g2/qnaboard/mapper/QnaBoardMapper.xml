@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.team.g2.qnaboard.mapper.QnaBoardMapper">
+
+    <insert id="insert">
+        insert into tbl_qnaboard(qtitle, qcontent, qwriter)
+        values (#{qtitle}, #{qcontent}, #{qwriter})
+    </insert>
+
+    <select id="getList" resultType="org.team.g2.qnaboard.domain.QnaBoard">
+        select *
+        from tbl_qnaboard
+        order by qno desc limit 0,10
+    </select>
+
+    <select id="read" resultType="org.team.g2.qnaboard.domain.QnaBoard">
+        select *
+        from tbl_qnaboard
+        where qno = #{qno}
+    </select>
+
+    <delete id="delete">
+        delete
+        from tbl_qnaboard
+        where qno = #{qno}
+    </delete>
+
+    <update id="update">
+        update tbl_qnaboard
+        set qtitle   = #{qtitle},
+            qcontent = #{qcontent}
+        where qno = #{qno}
+    </update>
+</mapper>

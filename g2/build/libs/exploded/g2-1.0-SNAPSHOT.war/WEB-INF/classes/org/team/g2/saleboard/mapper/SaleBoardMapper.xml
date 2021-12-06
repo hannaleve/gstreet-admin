@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.team.g2.saleboard.mapper.SaleBoardMapper">
+
+    <sql id="search">
+        <if test="type != null">
+            <foreach collection="arr" item="item" separator=" OR " open="WHERE (" close=")">
+                <if test="item == 'S'.toString()">
+                    s_category like concat('%' ,#{keyword}, '%')
+                </if>
+                <if test="item == 'T'.toString()">
+                    s_title like concat('%' ,#{keyword}, '%')
+                </if>
+                <if test="item == 'C'.toString()">
+                    s_content like concat('%' ,#{keyword}, '%')
+                </if>
+                <if test="item == 'W'.toString()">
+                    s_writer like concat('%' ,#{keyword}, '%')
+                </if>
+            </foreach>
+        </if>
+    </sql>
+
+    <insert id="insert">
+        insert into tbl_saleboard(s_category,s_title,s_content,s_writer)
+        values(#{s_category},#{s_title},#{s_content},#{s_writer})
+        <selectKey order="AFTER" resultType="long" keyProperty="sno">
+            select last_insert_id()
+        </selectKey>
+    </insert>
+
+    <select id="getList" resultType="org.team.g2.saleboard.domain.SaleBoard">
+        select * from tbl_saleboard
+        <include refid="search"></include>
+        order by sno desc limit #{skip},#{size}
+    </select>
+
+    <select id="getCount" resultType="int">
+        select count(sno) from tbl_saleBoard
+        <include refid="search"></include>
+    </select>
+
+    <select id="read" resultType="org.team.g2.saleboard.domain.SaleBoard">
+        select *
+        from tbl_saleboard
+        where sno = #{sno}
+    </select>
+
+    <update id="updateViewCount">
+        UPDATE tbl_saleboard
+        SET s_viewCount = s_viewCount + 1
+        WHERE sno = #{sno}
+    </update>
+
+    <delete id="delete">
+        delete
+        from tbl_saleboard
+        where sno = #{sno}
+    </delete>
+
+    <update id="update">
+        update tbl_saleboard
+        set s_title    = #{s_title},
+            s_category = #{s_category},
+            s_content  = #{s_content},
+            s_modDate  = now()
+        where sno = #{sno}
+    </update>
+
+    <update id="updateReplyCnt">
+        update tbl_saleboard set s_reCount = s_reCount + #{num} where sno = #{sno}
+    </update>
+
+    <select id="prevNum" resultType="Long">
+        select * from tbl_saleboard where sno  IN( select max(sno) from tbl_saleboard where #{sno} > sno)
+    </select>
+
+    <select id="nextNum" resultType="Long">
+        select * from tbl_saleboard where sno  IN( select min(sno) from tbl_saleboard where sno > #{sno} )
+    </select>
+
+
+</mapper>

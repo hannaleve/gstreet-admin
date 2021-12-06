@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.team.g2.fundboard.mapper.FundBoardMapper">
+
+    <select id="getTime2" resultType="string">
+        select now()
+    </select>
+
+    <sql id="search">
+        <if test="type != null">
+            <foreach collection="arr" item="item" separator=" OR " open="WHERE (" close=")">
+                <if test="item == 'T'.toString()">
+                    ftitle like concat('%', #{keyword}, '%')
+                </if>
+                <if test="item == 'C'.toString()">
+                    fcontent like concat('%', #{keyword}, '%')
+                </if>
+                <if test="item == 'W'.toString()">
+                    fwriter like concat('%', #{keyword}, '%')
+                </if>
+                <if test="item == 'H'.toString()">
+                    tags like concat('%', #{keyword}, '%')
+                </if>
+            </foreach>
+        </if>
+    </sql>
+
+        <select id="getHashList" resultType="org.team.g2.fundboard.domain.FundBoard">
+            select fno, ftitle, fwriter, fcontent, gubun, tags from
+            (select fno, ftitle, fwriter, fcontent, gubun, tags from tbl_fundboard f left outer join tbl_hashtag t on t.num = f.fno
+            <include refid="search"></include>
+            order by f.fno desc) temp
+            limit #{skip},#{size}
+        </select>
+
+    <insert id="insert">
+        insert into tbl_fundboard(ftitle,fcontent,fwriter,fenddate, fprice, goalPrice)
+        values(#{ftitle},#{fcontent},#{fwriter},DATE_ADD(now(), INTERVAL 1 WEEK), #{fprice}, #{goalPrice})
+
+        <selectKey order="AFTER" resultType="long" keyProperty="fno">
+            select last_insert_id()
+        </selectKey>
+    </insert>
+
+    <select id="getList" resultMap="hash2">
+        select fno, ftitle, fwriter, fregdate, fcount, goalPrice, fprice from
+        (select fno, ftitle, fwriter, gubun, tags, fcontent, goalPrice, fprice, fregdate, fcount from tbl_fundboard b left outer join tbl_hashtag t on t.num = b.fno order by b.fno desc ) temp
+
+        <include refid="search"></include>
+        order by fno desc limit #{skip},#{size}
+    </select>
+
+    <resultMap id="hash2" type="org.team.g2.fundboard.domain.FundBoard">
+        <id property="fno" column="fno"></id>
+        <result property="ftitle" column="ftitle"></result>
+        <result property="fwriter" column="fwriter"></result>
+        <result property="fcontent" column="fcontent"></result>
+        <result property="fregdate" column="fregdate"></result>
+        <result property="fenddate" column="fenddate"></result>
+        <result property="fcount" column="fcount"></result>
+        <result property="fprice" column="fprice"></result>
+        <result property="goalPrice" column="goalPrice"></result>
+        <collection property="hashList" resultMap="HashMap"></collection>
+    </resultMap>
+
+    <select id="getEndList" resultType="org.team.g2.fundboard.domain.FundBoard">
+        <![CDATA[
+        select * from tbl_fundboard where fenddate < now()
+        ]]>
+        order by fno desc limit 0, 10
+    </select>
+
+    <select id="getCount" resultType="int">
+        select count(fno) ftitle,fwriter,fregdate,fcount from
+        (select fno, ftitle, fwriter, gubun, tags, fcontent, fregdate, fcount
+        from tbl_fundboard b left outer join tbl_hashtag t on t.num = b.fno order by b.fno desc ) temp
+
+        <include refid="search"></include>
+    </select>
+
+    <resultMap id="fundBoardMap" type="org.team.g2.fundboard.domain.FundBoard">
+        <id property="fno" column="fno"></id>
+        <result property="ftitle" column="ftitle"></result>
+        <result property="fcontent" column="fcontent"></result>
+        <result property="fwriter" column="fwriter"></result>
+        <result property="fcount" column="fcount"></result>
+        <result property="fregdate" column="fregdate"></result>
+        <result property="fenddate" column="fenddate"></result>
+        <result property="fprice" column="fprice"></result>
+        <result property="goalPrice" column="goalPrice"></result>
+        <collection property="hashtagList" resultMap="hashtagMap"></collection>
+    </resultMap>
+
+    <resultMap id="HashMap" type="org.team.g2.fundboard.domain.FundBoardHashtag">
+        <result property="num" column="num"></result>
+        <result property="gubun" column="gubun"></result>
+        <result property="tags" column="tags"></result>
+    </resultMap>
+
+    <select id="select" resultType="org.team.g2.fundboard.domain.FundBoard">
+        select * from tbl_fundboard where fno = #{fno}
+    </select>
+
+    <update id="updateFundCnt">
+        update tbl_fundboard set fcount = fcount + 1 where fno = #{fno};
+    </update>
+
+    <update id="update">
+        update tbl_fundboard set ftitle = #{ftitle}, fcontent = #{fcontent}, fprice = #{fprice}
+        where fno = #{fno}
+    </update>
+
+    <delete id="delete">
+        delete from tbl_fundboard where fno = #{fno}
+    </delete>
+
+    <insert id="insertHashtag">
+        insert into tbl_hashtag (gubun, num, tags)
+        values ('F', #{num}, #{tags})
+    </insert>
+
+    <!--해시태그조회-->
+    <select id="selectHash" resultType="org.team.g2.fundboard.domain.FundBoardHashtag">
+        select tags from tbl_hashtag where num = #{num}
+    </select>
+
+    <!--해시태그삭제-->
+    <delete id="deleteHashtag">
+        delete from tbl_hashtag where num=#{num} and gubun='F'
+    </delete>
+
+</mapper>

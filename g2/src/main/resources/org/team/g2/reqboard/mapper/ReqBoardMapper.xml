@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.team.g2.reqboard.mapper.ReqBoardMapper">
+
+    <select id="getTime2" resultType="string">
+        select now()
+    </select>
+
+    <insert id="insert">
+        insert into tbl_reqboard(title,content,writer,lat,lang)
+        values(#{title},#{content},#{writer},#{lat},#{lang})
+        <selectKey order="AFTER" resultType="long" keyProperty="bno">
+            select last_insert_id()
+        </selectKey>
+    </insert>
+
+    <sql id="search">
+<if test="type != null">
+        <foreach collection="arr" item="item" separator=" OR " open="WHERE (" close=")">
+            <if test="item == 'T'.toString()">
+                title like concat('%', #{keyword}, '%')
+            </if>
+            <if test="item == 'C'.toString()">
+                content like concat('%', #{keyword}, '%')
+            </if>
+            <if test="item == 'W'.toString()">
+                writer like concat('%', #{keyword}, '%')
+            </if>
+            <if test="item == 'H'.toString()">
+                tags like concat('%', #{keyword}, '%')
+            </if>
+        </foreach>
+</if>
+    </sql>
+
+
+    <select id="getList" resultMap="hash2">
+        select bno, title,writer,regDate,reCount, (select count(ltlike) from tbl_req_like rk where rk.bno = temp.bno) as likeCount  from
+        (select bno, title, writer, gubun, tags ,content,regDate,reCount,likeCount from tbl_reqboard b left outer join tbl_hashtag t on t.num = b.bno order by b.bno desc ) temp
+
+
+        <include refid="search"></include>
+
+
+        limit #{skip},#{size}
+
+    </select>
+
+    <resultMap id="hash2" type="org.team.g2.reqboard.domain.ReqBoard">
+        <id property="bno" column="bno"></id>
+        <result property="title" column="title"></result>
+        <result property="writer" column="writer"></result>
+        <result property="content" column="content"></result>
+        <result property="regDate" column="regDate"></result>
+        <result property="modDate" column="modDate"></result>
+        <result property="reCount" column="reCount"></result>
+        <result property="likeCount" column="likeCount"></result>
+        <result property="lat" column="lat"></result>
+        <result property="lang" column="lang"></result>
+        <collection property="hashList" resultMap="HashMap"></collection>
+    </resultMap>
+
+    <resultMap id="HashMap" type="org.team.g2.reqboard.domain.ReqHashTag">
+        <result property="num" column="num"></result>
+        <result property="gubun" column="gubun"></result>
+        <result property="tags" column="tags"></result>
+    </resultMap>
+
+
+    <select id="getCount" resultType="int">
+        select count(bno), title,writer,regDate,reCount, (select count(ltlike) from tbl_req_like rk where rk.bno = temp.bno) as likeCount  from
+        (select bno, title, writer, gubun, tags ,content,regDate,reCount,likeCount from tbl_reqboard b left outer join tbl_hashtag t on t.num = b.bno order by b.bno desc ) temp
+
+        <include refid="search"></include>
+
+
+    </select>
+
+
+    <update id="updateReplyCnt">
+        update tbl_reqboard set replyCnt = replyCnt + #{num} where bno = #{bno}
+    </update>
+
+
+    <update id="updateViewCount">
+        update tbl_reqboard set reCount = reCount + 1 where bno = #{bno}
+    </update>
+
+    <delete id="delete">
+        delete from tbl_reqboard where bno=#{bno}
+    </delete>
+
+    <update id="update">
+        update tbl_reqboard set title=#{title},content=#{content},moddate=now(),lat=#{lat},lang=#{lang}
+        where bno=#{bno}
+    </update>
+
+
+
+    <select id="ltlikecount" resultType="Integer" parameterType="org.team.g2.reqboard.domain.ReqLike">
+        select count(ltlike) from tbl_req_like where userID=#{userID} and bno=#{bno}
+    </select>
+
+    <insert id="likeinsert" parameterType="org.team.g2.reqboard.domain.ReqLike">
+        insert into tbl_req_like(userID,bno)
+        values (#{userID},#{bno})
+
+    </insert>
+
+    <select id="ltlikegetinfo" resultType="Integer" parameterType="org.team.g2.reqboard.domain.ReqLike">
+        select ltlike from tbl_req_like where userID=#{userID} and bno=#{bno}
+    </select>
+
+
+    <update id="likeupdate" parameterType="org.team.g2.reqboard.domain.ReqLike">
+        update tbl_req_like
+        set <include refid="cal"></include>
+        where userID=#{userID} and bno=#{bno}
+
+
+    </update>
+
+    <sql id="cal">
+        <if test="count == 1">
+            ltlike = 0
+        </if>
+
+        <if test="count == 0">
+            ltlike = ltlike + 1
+        </if>
+    </sql>
+
+
+    <select id="getUserID" resultType="org.team.g2.reqboard.domain.ReqLike">
+        select userID,count(ltlike) from tbl_req_like where bno = #{bno}
+    </select>
+
+
+    <resultMap id="boardMap" type="org.team.g2.reqboard.domain.ReqBoard">
+        <id property="bno" column="bno"></id>
+        <result property="title" column="title"></result>
+        <result property="writer" column="writer"></result>
+        <result property="content" column="content"></result>
+        <result property="regDate" column="regDate"></result>
+        <result property="modDate" column="modDate"></result>
+        <result property="reCount" column="reCount"></result>
+        <result property="likeCount" column="likeCount"></result>
+        <result property="lat" column="lat"></result>
+        <result property="lang" column="lang"></result>
+        <collection property="attachList" resultMap="attachMap"></collection>
+    </resultMap>
+
+    <resultMap id="attachMap" type="org.team.g2.reqboard.domain.ReqBoardAttach">
+        <result property="uuid" column="uuid"></result>
+        <result property="bno" column="bno"></result>
+        <result property="path" column="path"></result>
+        <result property="fileName" column="fileName"></result>
+        <result property="image" column="image"></result>
+    </resultMap>
+
+    <select id="select2" resultMap ="boardMap">
+        SELECT * FROM tbl_reqboard board LEFT JOIN tbl_req_file ta on board.bno = ta.bno WHERE board.BNO = #{bno}
+    </select>
+
+    <insert id="insertAttach">
+        insert into tbl_req_file(uuid,bno,path,fileName,image)
+        values(#{uuid},#{bno},#{path},#{fileName},#{image})
+    </insert>
+
+    <delete id="deleteAttach">
+        delete from tbl_req_file where bno = #{bno}
+    </delete>
+
+
+    <insert id="hashtaginsert">
+        insert into tbl_hashtag(gubun,num,tags)
+        values('R',#{num},#{tags})
+
+    </insert>
+
+
+    <select id="selectHash"  resultType="org.team.g2.reqboard.domain.ReqHashTag">
+
+        select tags from tbl_hashtag where num = #{num}
+
+
+    </select>
+
+
+    <delete id="deletehashtags">
+        delete from tbl_hashtag where num=#{num} and gubun='R'
+    </delete>
+
+
+
+
+</mapper>

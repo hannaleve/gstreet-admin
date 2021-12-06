@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.team.g2.reqboard.mapper.ReplyMapper">
+
+    <insert id="insert">
+        insert into tbl_req_reply(bno, replyer, reply,group_id)
+        values (#{bno},#{replyer},#{reply}, #{group_id})
+        <selectKey order="AFTER" resultType="Long" keyProperty="rno">
+            select last_insert_id()
+        </selectKey>
+    </insert>
+
+    <select id="getListWithReqboard" resultType="org.team.g2.reqboard.domain.Reply">
+        select * from tbl_req_reply where bno = #{bno} order by group_id asc, rno asc
+    </select>
+
+    <update id="update">
+        update tbl_req_reply set reply = #{reply}, modDate = now()
+        where rno = #{rno}
+
+    </update>
+
+    <delete id="delete">
+        delete from tbl_req_reply where rno = #{rno}
+    </delete>
+
+    <update id="update2">
+        update tbl_req_reply
+         set
+          group_id = #{rno}
+         where rno = #{rno}
+    </update>
+
+
+</mapper>

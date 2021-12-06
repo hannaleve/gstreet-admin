@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.team.g2.reqboard.mapper.ReqBoardMapper">
+
+    <select id="getTime2" resultType="string">
+        select now()
+    </select>
+
+<!--등록-->
+    <insert id="insert">
+        insert into tbl_reqboard(title,content,writer,lat,lang)
+        values(#{title},#{content},#{writer},#{lat},#{lang})
+        <selectKey order="AFTER" resultType="long" keyProperty="bno">
+            select last_insert_id()
+        </selectKey>
+    </insert>
+
+<!--목록-->
+    <select id="getList" resultType="org.team.g2.reqboard.domain.ReqBoard">
+        select * from tbl_reqboard order by bno desc limit 0,100
+    </select>
+
+    <!--조회-->
+    <select id="select" resultType="org.team.g2.reqboard.domain.ReqBoard">
+        select * from tbl_reqboard where bno=#{bno}
+    </select>
+
+    <!--작성글 조회수-->
+    <update id="updateViewCount">
+        update tbl_reqboard set reCount = reCount + 1 where bno = #{bno}
+    </update>
+
+
+
+</mapper>

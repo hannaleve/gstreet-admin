@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.team.g2.memberboard.mapper.MemberBoardMapper">
+    <sql id="search">
+        <if test="type != null">
+            <foreach collection="arr" item="item" separator=" OR " open="WHERE (" close=")">
+                <if test="item == 'I'.toString()">
+                    userID like concat('%', #{keyword}, '%')
+                </if>
+                <if test="item == 'N'.toString()">
+                    userName like concat('%', #{keyword}, '%')
+                </if>
+                <if test="item == 'K'.toString()">
+                    userNickname like concat('%', #{keyword}, '%')
+                </if>
+            </foreach>
+        </if>
+    </sql>
+
+    <select id="getMemberList" resultType="org.team.g2.memberboard.domain.MemberBoard">
+        select * from tbl_member_reg
+        <include refid="search"></include>
+        order by userRegDate desc limit #{skip},#{size};
+        select * from tbl_member_role;
+        select * from tbl_member;
+    </select>
+
+    <select id="getCount" resultType="int">
+        select count(userID) from tbl_member_reg
+        <include refid="search"></include>
+    </select>
+
+    <!--    <select id="select" resultType="org.team.g2.memberboard.domain.MemberBoard">-->
+    <!--        select * from tbl_member_reg where userID = #{userID}-->
+    <!--    </select>-->
+
+    <select id="select4" resultMap="memberBoardMap">
+        select *
+        from tbl_member_reg reg
+                 left join tbl_member_profile prof on reg.userID = prof.userID
+        where reg.userID = #{userID};
+    </select>
+
+
+    <!--    회원등록-->
+    <insert id="insert4" parameterType="map">
+        insert into tbl_member_reg(userID, userPW, userName, userRegNum, userPhone, userNickname,
+                                   userEmail, userAddress)
+        values (#{userID}, #{userPW}, #{userName}, #{userRegNum}, #{userPhone}, #{userNickname},
+                #{userEmail}, #{userAddress});
+        insert into tbl_member(userID, userPW)
+        values (#{userID}, #{userPW});
+        insert into tbl_member_role(userID, role)
+        values (#{userID}, 'ROLE_MEMBER');
+        insert into tbl_member_addressapi(userID, userAddress, userAddress2, userZipCode, userAddressExtra,
+                                          userAddressDetail)
+        values (#{userID}, #{userAddress}, #{userAddress2}, #{userZipCode}, #{userAddressExtra}, #{userAddressDetail});
+    </insert>
+
+    <resultMap id="memberBoardMap" type="org.team.g2.memberboard.domain.MemberBoard">
+        <id property="userID" column="userID"></id>
+        <result property="userPW" column="userPW"></result>
+        <result property="userName" column="userName"></result>
+        <result property="userRegNum" column="userRegNum"></result>
+        <result property="userPhone" column="userPhone"></result>
+        <result property="userAddress" column="userAddress"></result>
+        <result property="userNickname" column="userNickName"></result>
+        <result property="userEmail" column="userEmail"></result>
+        <result property="userRegDate" column="userRegDate"></result>
+        <result property="userRole" column="userRole"></result>
+        <result property="userEnabled" column="userEnabled"></result>
+        <collection property="attachList" resultMap="attachMap"></collection>
+    </resultMap>
+
+    <resultMap id="attachMap" type="org.team.g2.memberboard.domain.MemberBoardAttach">
+        <result property="userID" column="userID"></result>
+        <result property="userUuid" column="userUuid"></result>
+        <result property="userFileName" column="userFileName"></result>
+        <result property="userFilePath" column="userFilePath"></result>
+        <result property="userImageCheck" column="userImageCheck"></result>
+    </resultMap>
+
+    <select id="idCheck" resultType="int">
+        select count(userID)
+        from tbl_member_reg
+        where userID is not null
+          and userID = #{userID};
+    </select>
+
+    <update id="update4">
+        update tbl_member_role
+        set role = ''
+        where userID = #{userID};
+        update tbl_member
+        set userenabled = '0'
+        where userID = #{userID};
+    </update>
+
+    <insert id="insertAttach">
+        insert into tbl_member_profile (userID, userUuid, userFileName, userFilePath, userImageCheck)
+        values (#{userID}, #{userUuid}, #{userFileName}, #{userFilePath}, #{userImageCheck})
+    </insert>
+
+    <select id="getRoleList" resultType="org.team.g2.security.domain.MemberRole">
+        select *
+        from tbl_member_role
+        where userID = #{userID};
+    </select>
+
+    <update id="ban">
+        update tbl_member set userEnabled = 0
+        where userID = #{userID};
+        update tbl_member_reg set userEnabled = 0
+        where userID = #{userID};
+    </update>
+
+    <update id="unban">
+        update tbl_member set userEnabled = 1
+        where userID = #{userID};
+        update tbl_member_reg set userEnabled = 1
+        where userID = #{userID};
+    </update>
+
+    <update id="grantMember">
+        update tbl_member_role set role='ROLE_MEMBER'
+        where userID = #{userID};
+        update tbl_member_reg set userRole='MEMBER'
+        where userID = #{userID};
+    </update>
+
+    <update id="grantSeller">
+        update tbl_member_role set role='ROLE_SELLER'
+        where userID = #{userID};
+        update tbl_member_reg set userRole='SELLER'
+        where userID = #{userID};
+    </update>
+
+    <update id="grantAdmin">
+        update tbl_member_role set role='ROLE_ADMIN'
+        where userID = #{userID};
+        update tbl_member_reg set userRole='ADMIN'
+        where userID = #{userID};
+    </update>
+</mapper>

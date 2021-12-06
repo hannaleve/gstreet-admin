@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Gradle : org.team.g2 : g2-1.0-SNAPSHOT.war" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fab7c4f0-c413-4e23-a38e-a10bf7b9ce22" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="g2" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="jsf" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Jsp File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1yJRIfAXXJ2esPG5VL1n7Zu6TQJ" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\82102\IdeaProjects\g2\src\main\webapp\WEB-INF\views" />
+      <recent name="C:\Users\82102\IdeaProjects\g2\src\main\webapp\WEB-INF\views\memberboard" />
+      <recent name="C:\Users\82102\IdeaProjects\g2\src\main\java\org\team\g2\memberboard" />
+      <recent name="C:\Users\82102\IdeaProjects\g2\src\main\java\org\team\g2\memberboard\config" />
+      <recent name="C:\Users\82102\IdeaProjects\g2\src\main\resources\org\team\g2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\82102\IdeaProjects\g2\src\main\webapp\resources\img" />
+      <recent name="C:\Users\82102\IdeaProjects\g2\src\main\webapp\resources\js\reqboard" />
+      <recent name="C:\Users\82102\IdeaProjects\g2\src\main\webapp\resources\js" />
+      <recent name="C:\Users\82102\IdeaProjects\g2\src\main\java\org\team\g2\saleboard" />
+      <recent name="C:\Users\82102\IdeaProjects\g2\src\main\webapp\WEB-INF\views" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.50">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminMapperTests.testGetStat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="g2.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.team.g2.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.team.g2.mapper" />
+      <option name="MAIN_CLASS_NAME" value="org.team.g2.mapper.AdminMapperTests" />
+      <option name="METHOD_NAME" value="testGetStat" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminMapperTests.testHashList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="g2.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.team.g2.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.team.g2.mapper" />
+      <option name="MAIN_CLASS_NAME" value="org.team.g2.mapper.AdminMapperTests" />
+      <option name="METHOD_NAME" value="testHashList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReqBoardMapperTests.testHash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="g2.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.team.g2.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.team.g2.mapper" />
+      <option name="MAIN_CLASS_NAME" value="org.team.g2.mapper.ReqBoardMapperTests" />
+      <option name="METHOD_NAME" value="testHash" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReqBoardMapperTests.testList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="g2.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.team.g2.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.team.g2.mapper" />
+      <option name="MAIN_CLASS_NAME" value="org.team.g2.mapper.ReqBoardMapperTests" />
+      <option name="METHOD_NAME" value="testList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReqBoardMapperTests.testUpdateHash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="g2.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.team.g2.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.team.g2.mapper" />
+      <option name="MAIN_CLASS_NAME" value="org.team.g2.mapper.ReqBoardMapperTests" />
+      <option name="METHOD_NAME" value="testUpdateHash" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.50" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.50" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Gradle : org.team.g2 : g2-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="3066cb5d-86b7-4045-82ad-4cd54b234774" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="60134" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : org.team.g2 : g2-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.ReqBoardMapperTests.testList" />
+      <item itemvalue="JUnit.ReqBoardMapperTests.testHash" />
+      <item itemvalue="JUnit.ReqBoardMapperTests.testUpdateHash" />
+      <item itemvalue="JUnit.AdminMapperTests.testGetStat" />
+      <item itemvalue="JUnit.AdminMapperTests.testHashList" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.50" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AdminMapperTests.testHashList" />
+        <item itemvalue="JUnit.AdminMapperTests.testGetStat" />
+        <item itemvalue="JUnit.ReqBoardMapperTests.testUpdateHash" />
+        <item itemvalue="JUnit.ReqBoardMapperTests.testList" />
+        <item itemvalue="JUnit.ReqBoardMapperTests.testHash" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fab7c4f0-c413-4e23-a38e-a10bf7b9ce22" name="Default Changelist" comment="" />
+      <created>1631967626623</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1631967626623</updated>
+      <workItem from="1631967628090" duration="16397000" />
+      <workItem from="1631986432569" duration="1381000" />
+      <workItem from="1631987847439" duration="631000" />
+      <workItem from="1631988810719" duration="5699000" />
+      <workItem from="1632032079559" duration="326000" />
+      <workItem from="1632032433817" duration="1193000" />
+      <workItem from="1632298070784" duration="4286000" />
+      <workItem from="1632302571218" duration="5972000" />
+      <workItem from="1632309663668" duration="8363000" />
+      <workItem from="1632320421856" duration="5863000" />
+      <workItem from="1632326362375" duration="7749000" />
+      <workItem from="1632334214927" duration="4990000" />
+      <workItem from="1632339345122" duration="208000" />
+      <workItem from="1632357199805" duration="291000" />
+      <workItem from="1632357511182" duration="245000" />
+      <workItem from="1632357957485" duration="66000" />
+      <workItem from="1632358054481" duration="4873000" />
+      <workItem from="1632363307794" duration="24074000" />
+      <workItem from="1632409174486" duration="14073000" />
+      <workItem from="1632447511313" duration="28589000" />
+      <workItem from="1632483226071" duration="575000" />
+      <workItem from="1632577160924" duration="39192000" />
+      <workItem from="1632651306386" duration="25963000" />
+      <workItem from="1632704617624" duration="4480000" />
+      <workItem from="1632730316051" duration="6760000" />
+      <workItem from="1632750091913" duration="14264000" />
+      <workItem from="1632770367808" duration="215000" />
+      <workItem from="1632789565036" duration="1149000" />
+      <workItem from="1632791276927" duration="26339000" />
+      <workItem from="1632839702327" duration="7968000" />
+      <workItem from="1632876039317" duration="26991000" />
+      <workItem from="1632927357311" duration="5935000" />
+      <workItem from="1632933492966" duration="7156000" />
+      <workItem from="1632961983292" duration="21652000" />
+      <workItem from="1632991463186" duration="5953000" />
+      <workItem from="1633011780011" duration="8014000" />
+      <workItem from="1633049334080" duration="18000" />
+      <workItem from="1633064170590" duration="17783000" />
+      <workItem from="1633227831975" duration="46772000" />
+      <workItem from="1633345001509" duration="44000" />
+      <workItem from="1633360371862" duration="2238000" />
+      <workItem from="1633363526310" duration="2557000" />
+      <workItem from="1633393832640" duration="75000" />
+      <workItem from="1633402286219" duration="100000" />
+      <workItem from="1633411118605" duration="14182000" />
+      <workItem from="1633443497215" duration="8000" />
+      <workItem from="1633456561244" duration="4163000" />
+      <workItem from="1633461884465" duration="630000" />
+      <workItem from="1633480450735" duration="384000" />
+      <workItem from="1633498077044" duration="6000" />
+      <workItem from="1633500538223" duration="3979000" />
+      <workItem from="1633504630793" duration="373000" />
+      <workItem from="1633583195235" duration="6535000" />
+      <workItem from="1633597446045" duration="1934000" />
+      <workItem from="1633601046417" duration="166000" />
+      <workItem from="1633615557675" duration="27000" />
+      <workItem from="1633673244652" duration="4190000" />
+      <workItem from="1633680496089" duration="9065000" />
+      <workItem from="1633690065030" duration="2899000" />
+      <workItem from="1633763933368" duration="2383000" />
+      <workItem from="1633770550646" duration="5838000" />
+      <workItem from="1633779025364" duration="18297000" />
+      <workItem from="1633887503329" duration="1394000" />
+      <workItem from="1633888932613" duration="3034000" />
+      <workItem from="1633892042711" duration="1525000" />
+      <workItem from="1633893830400" duration="2126000" />
+      <workItem from="1633977051596" duration="5000" />
+      <workItem from="1633977084541" duration="13000" />
+      <workItem from="1634026387324" duration="206000" />
+      <workItem from="1634057824895" duration="2449000" />
+      <workItem from="1634112521152" duration="739000" />
+      <workItem from="1634113283999" duration="3848000" />
+      <workItem from="1634117574713" duration="8849000" />
+      <workItem from="1634142930713" duration="3826000" />
+      <workItem from="1634189749249" duration="18493000" />
+      <workItem from="1634209939757" duration="963000" />
+      <workItem from="1634258134484" duration="62000" />
+      <workItem from="1634443695944" duration="94000" />
+      <workItem from="1634469245822" duration="586000" />
+      <workItem from="1634473159616" duration="1507000" />
+      <workItem from="1634475160457" duration="4000" />
+      <workItem from="1634653632647" duration="19000" />
+      <workItem from="1634752968059" duration="3908000" />
+      <workItem from="1634757006648" duration="726000" />
+      <workItem from="1634796937841" duration="15784000" />
+      <workItem from="1634899434144" duration="15685000" />
+      <workItem from="1634987447859" duration="10079000" />
+      <workItem from="1635002352740" duration="676000" />
+      <workItem from="1635153947535" duration="368000" />
+      <workItem from="1635154340877" duration="1016000" />
+      <workItem from="1635155469853" duration="1913000" />
+      <workItem from="1635225401356" duration="5056000" />
+      <workItem from="1635230694558" duration="938000" />
+      <workItem from="1635231670190" duration="13329000" />
+      <workItem from="1635245696975" duration="3464000" />
+      <workItem from="1635256841465" duration="112000" />
+      <workItem from="1635279949919" duration="822000" />
+      <workItem from="1635297542133" duration="1179000" />
+      <workItem from="1635308354305" duration="19878000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/reqboard/register.jsp</url>
+          <line>204</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/team/g2/memberboard/controller/UploadController4.java</url>
+          <line>117</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/reqboard/modify.jsp</url>
+          <line>134</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

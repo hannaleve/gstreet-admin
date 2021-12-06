@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.team.g2.admin.mapper.AdminMapper">
+
+    <!--전체회원수-->
+    <select id="getStat" resultType="String">
+        select count(*) from tbl_member_reg reg left join tbl_member mem on reg.userID = mem.userID
+        where mem.userEnabled = 1;
+    </select>
+
+    <!--신규회원수-->
+    <select id="getStat2" resultType="String">
+        select count(*) from tbl_member_reg where date(userRegDate) = date(now());
+    </select>
+
+
+
+    <!--해시태그-->
+    <select id="hashList" resultType="org.team.g2.reqboard.domain.ReqHashTag">
+        select tags from tbl_hashtag order by num desc limit 0,10;
+    </select>
+
+    <!--총게시글수-->
+    <select id="countList" resultType="String">
+        select sum(cnt) from (
+                                 select count(*) cnt from tbl_fundboard
+                                 union all
+                                 select count(*) cnt from tbl_reqboard
+                                 union all
+                                 select count(*) cnt from tbl_saleboard
+                             ) a;
+    </select>
+
+    <!--요청게시판게시글-->
+    <select id="request" resultType="org.team.g2.reqboard.domain.ReqBoard">
+        select * from tbl_reqboard order by bno desc limit 0,5;
+    </select>
+
+    <!--펀딩게시판게시글-->
+    <select id="fundboardList" resultType="org.team.g2.fundboard.domain.FundBoard">
+        select * from tbl_fundboard order by fno desc limit 0,5;
+    </select>
+
+    <!--등록게시판게시글-->
+    <select id="saleboardList" resultType="org.team.g2.saleboard.domain.SaleBoard">
+        select * from tbl_saleboard order by sno desc limit 0,5;
+    </select>
+    <!--Q&A게시판게시글-->
+    <select id="qnaboardList" resultType="org.team.g2.qnaboard.domain.QnaBoard">
+        select * from tbl_qnaboard order by qno desc limit 0,5;
+    </select>
+
+</mapper>

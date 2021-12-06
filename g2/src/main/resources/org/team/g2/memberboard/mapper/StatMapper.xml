@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.team.g2.memberboard.mapper.StatMapper">
+    <select id="getStat" resultType="string">
+        select count(*) from tbl_member_reg reg left join tbl_member mem on reg.userID = mem.userID
+        where mem.userEnabled = 1;
+    </select>
+
+    <select id="getStat2" resultType="string">
+        select count(*) from tbl_member_reg where date(userRegDate) = date(now());
+    </select>
+</mapper>
