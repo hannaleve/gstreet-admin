@@ -8,7 +8,7 @@
 
 • 목적: 사용자가 전세계를 마치 내 동네처럼 친근하게 오가는 듯한 인상을 주는 것을 목표하여 착안<br/>
 • 개발기간 : 4주(2021.09.13~2021.10.13)<br/>
-• 개발환경 : Spring Framework,Mybatis,Bootstrap,Junit5<br/>
+• 개발환경 : Spring Framework,Spring-Security,Mybatis,Bootstrap,Junit5<br/>
 • DB : mysql 8.0.26<br/>
 • 협업툴 : Git,Notion<br/>
 • 주요기능 : 사용자가 보다 간편하게 해외 직구를 조회하고 이용할 수 있는 서비스<br/>
